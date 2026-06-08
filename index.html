@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>🌱 Agro Forte - Equilíbrio Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>🌾 AGRO FORTE ⚖️ MEIO AMBIENTE</h1>
+            <p>Mantenha o equilíbrio entre produção e natureza!</p>
+        </header>
+
+        <div class="stats-panel">
+            <div class="stat">
+                <span class="stat-icon">🌽</span>
+                <span class="stat-label">Produção:</span>
+                <span id="productionValue" class="stat-value">50</span>
+                <div class="progress-bar">
+                    <div id="productionBar" class="progress-fill production-fill"></div>
+                </div>
+            </div>
+            <div class="stat">
+                <span class="stat-icon">🌳</span>
+                <span class="stat-label">Meio Ambiente:</span>
+                <span id="environmentValue" class="stat-value">50</span>
+                <div class="progress-bar">
+                    <div id="environmentBar" class="progress-fill environment-fill"></div>
+                </div>
+            </div>
+            <div class="balance-indicator">
+                <span>⚖️ Equilíbrio:</span>
+                <span id="balanceStatus" class="balance-status">Estável 🌟</span>
+            </div>
+            <div class="score-box">
+                <span>🏆 Pontuação Sustentável:</span>
+                <span id="scoreValue">0</span>
+            </div>
+        </div>
+
+        <div class="game-area">
+            <div class="actions">
+                <h2>Ações do Agricultor</h2>
+                <div class="buttons-grid">
+                    <button id="plantBtn" class="action-btn plant-btn">🌱 Plantar Árvores<br><small>+Ambiente -Produção</small></button>
+                    <button id="intensifyBtn" class="action-btn intensify-btn">🚜 Intensificar Colheita<br><small>+Produção -Ambiente</small></button>
+                    <button id="techBtn" class="action-btn tech-btn">💡 Tecnologia Verde<br><small>++Ambiente +Produção</small></button>
+                    <button id="rotateBtn" class="action-btn rotate-btn">🔄 Rotação de Culturas<br><small>+Equilíbrio</small></button>
+                </div>
+            </div>
+            <div class="event-area">
+                <h3>🌍 Eventos Climáticos & Notícias</h3>
+                <div id="eventMessage" class="event-message">Clique nos botões para agir! Mantenha produção e ambiente entre 30 e 70.</div>
+                <div id="gameOverMsg" class="game-over-message hidden"></div>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="resetBtn" class="reset-btn">🔄 Reiniciar Jogo</button>
+        </div>
+        <footer>
+            <p>💡 Dica: Equilíbrio ideal = produção e ambiente próximos (diferença ≤ 10) | Pontuação aumenta com equilíbrio!</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
